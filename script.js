@@ -44,4 +44,9 @@ const countdownInterval = setInterval(function(){
 
   text.innerHTML = 'SDCC : ' + hari + ':' + jam + ':' + menit + ':' + detik;
 
+  if(selisih == 0){
+    clearInterval(countdownInterval);
+    text.innerHTML = 'SDCC Now'
+  }
+
 }, 1000);
